@@ -19,7 +19,6 @@ class Post(models.Model):
     review = models.TextField()
     price = models.FloatField()
     score = models.CharField(max_length=1, choices=Score_Choices)
-    picture = models.FileField(null=True, blank=True, default='static/error.jpg')
     author = models.CharField(max_length=50, default="")
 
     def __str__(self):
